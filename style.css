@@ -1,0 +1,530 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --main-color:#FB929E;
+    --text-color:#8785A2;
+    --bg-color: #FFF6F6;
+    --big-font:5rem;
+    --h2-font:2.25rem;
+    --p-font:0.9;
+}
+
+*::selection {
+    background: var(--main-color);
+    color: #FFF6F6;
+}
+
+body {
+    color: var(--text-color);
+    background: var(--bg-color);
+    
+}
+
+body::-webkit-scrollbar {
+    width: 10px;    
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);    
+    border-radius: 10px;       
+  }
+
+
+/*header*/
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 170px;
+    background: var(--bg-color);
+    
+}
+
+header img {
+    position: absolute;
+    display: block;
+    width: 100px;
+    top: 0px;
+}
+
+textarea {
+    resize: none;
+    width: 50%;
+}
+
+.logo {
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: 2.4rem;
+}
+
+.barra-menu {
+    display: flex;
+}
+
+.barra-menu a {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+
+.barra-menu a:hover{
+    color: var(--main-color);
+    transition: .4s;
+}
+
+#icone-menu {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+/*home*/
+section {
+    padding: 70px 17%;
+}
+
+.home {
+    width: 100%;
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 8rem;
+    align-items: center;
+}
+
+.img-home img {
+    max-width: 100%;
+    width: 600px;
+    height: auto;
+}
+
+.texto-home h1 {
+    font-size: var(--big-font);
+    color: var(--main-color);
+}
+
+.texto-home h2 {
+    font-size: var(--h2-font);
+    margin: 1rem 0 2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--main-color);
+    color: #FFF6F6;
+    border-radius: 0.5rem;
+}
+
+.btn:hover {
+    transform: scale(1.2) translateY(10px);
+    transition: .4s;
+}
+
+.sobre-mim {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    column-gap: 8rem;
+    align-items: center;   
+}
+
+.img-sobre img {
+    max-width: 90%;
+    width: 480px;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: var(--main-color) 0px 0px 0px 2px;
+}
+
+.texto-sobre span {
+    color: var(--main-color);
+    font-weight: 600;    
+}
+
+.texto-sobre h2 {
+    font-size: var(--h2-font);
+}
+
+.texto-sobre p {
+    margin: 0.8rem 0 1.8rem;
+    line-height: 1.7;
+}
+
+/*sobre mim*/
+
+.nsei {
+    text-align: center;
+}
+
+.nsei span {
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.nsei h2 {
+    font-size: var(--h2-font);
+}
+
+.hobbies-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    column-gap: 1.5rem;
+    align-items: center;
+    text-align: center;
+}
+
+.caixa {
+    position: relative;
+    margin-top: 4rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.img-caixa {
+    width: 220px;
+    height: 220px;
+}
+
+.img-caixa img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+}
+
+.caixa h2 {
+    font-size: 1.3rem;
+    color: var(--main-color);
+}
+
+.caixa h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 4px 0 10px;
+}
+
+/*portfolio*/
+
+.caixa span {
+    font-size: var(--p-font);
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, auto));
+    column-gap: 3rem;
+    margin-top: 4em;
+}
+
+.caixa-p {
+    text-align: center;
+    padding: 20px 30px;
+    border-radius: 0.5rem;
+}
+
+
+.caixa-p img {
+    width: 100%;
+    box-shadow: var(--main-color) 0px 0px 0px 1px;
+}
+
+.caixa-p h3 {
+    margin: 4px 0 10px;
+    font-size: 1.2rem;
+    color: var(--main-color);
+}
+
+.caixa-p p {
+    line-height: 1.7;
+}
+
+/*contato*/
+
+.contato {
+    background: var(--text-color);
+    padding: 70px 0;
+    text-align: center;
+    width: 40%;
+    margin: 100px auto;
+    border-radius: 10px;
+}
+
+.contato h2 {
+    font-size: 2rem;
+    color: var(--bg-color);
+    margin-bottom: 30px;
+}
+
+.tentando {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input-contato {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    
+    width: 35%;
+    height: 30px;   
+    border: none;
+    border-radius: 0.5rem;
+    outline-color: var(--main-color); 
+    padding: 10px;
+}
+
+.text {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    resize: none;
+    width: 70%;
+    border-radius: 0.5rem;
+    padding: 10px;
+    outline-color: var(--main-color);
+}
+
+.btn-input {
+    display: inline-block;
+    padding: 10px 40px;
+    background: var(--main-color);
+    color: #FFF6F6;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.btn-input:hover {
+    transform: scale(1.2) translateY(10px);
+    transition: .4s;
+}
+
+label {
+    color: var(--bg-color);
+}
+
+/*footer*/
+.principal {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer {
+    padding: 10px 0;
+}
+
+.what {
+    width: 25%;
+}
+
+.what h4 {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.what h4::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 50px;
+    left: 0;
+    bottom: -8px;
+    background: var(--main-color);
+}
+
+.what ul li:not(last-child) {
+    margin-bottom: 15px;
+}
+
+.what ul li a {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    display: block;
+    text-transform: capitalize;
+    transition: .4s;
+}
+
+.what ul li a:hover {
+    color: var(--text-color);
+    transform: translateX(-12px);   
+}
+
+.what .social {
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.what .social a {
+    width: 40px;
+    height: 40px;
+    background: var(--main-color);
+    color: var(--text-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+.what .social a:hover {
+    transform: scale(1.2);
+    color: var(--bg-color);
+    background: var(--text-color);
+}
+
+/* responsividade */
+
+@media (max-width: 1560px) {
+    header {
+        padding: 15px 40px;
+    }
+    :root {
+        --big-font:3.5rem;
+        --h2-font:2rem;
+    }
+
+    header img {
+        width: 60px;
+    }
+}
+
+@media (max-width: 1140px) {
+    section {
+        padding: 50px 8%;
+    }
+
+    #icone-menu {
+        display: initial;
+        color: var(--text-color);
+    }
+
+    header .barra-menu {
+        position: absolute;
+        top: -400px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background: var(--bg-color);
+        transition: .3s;
+    }
+
+    header img {
+        width: 60px;
+    }
+
+    header .barra-menu.active {
+        top: 60px;
+    }
+
+    .barra-menu a {
+        padding: 1.5rem;
+        display: block;
+    }
+
+    .contato {
+        width: 60%;
+    }
+}
+
+@media (max-width: 720px) {
+    header {
+        padding: 10px 16px;
+    }
+
+    header img {
+        display: none;
+    }
+
+    .home {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .img-home img {
+        margin-top: 10px;
+    }
+
+    .sobre-mim {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .img-sobre {
+        order: 2;
+    }
+
+    section {
+        padding: 100px 7%;
+    }
+
+    .contato {
+        width: 80%;
+    }
+}
+
+@media (max-width: 575px) {
+
+    .img-home img {
+        margin-top: 10px;
+    }
+
+    .what {
+        width: 100%;
+    }
+
+    .contato {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .contato {
+        width: 95%;
+    }
+
+    .portfolio-container {
+        grid-template-columns: repeat(auto-fit, minmax(100%, auto));
+    }
+
+    .caixa-p {
+        text-align: center;
+        padding: 20px 2px;
+    }
+
+    .input-contato {
+        width: 60%;
+    }
+
+    .text {
+        width: 85%;
+    }
+
+}
