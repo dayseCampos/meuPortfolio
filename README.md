@@ -1,3 +1,1 @@
-<h1 align="center"> Meu Portfólio </h1> 
-
-<img src="img/saber.jpg">
+<img src"img/flor.png"><h1 align="center"> Meu Portfólio </h1> 
