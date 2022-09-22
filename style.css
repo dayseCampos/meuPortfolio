@@ -61,11 +61,6 @@ header img {
     top: 0px;
 }
 
-textarea {
-    resize: none;
-    width: 50%;
-}
-
 .logo {
     color: var(--main-color);
     font-weight: 600;
@@ -137,6 +132,8 @@ section {
     transition: .4s;
 }
 
+/*sobre mim*/
+
 .sobre-mim {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
@@ -165,8 +162,6 @@ section {
     margin: 0.8rem 0 1.8rem;
     line-height: 1.7;
 }
-
-/*sobre mim*/
 
 .nsei {
     text-align: center;
@@ -294,6 +289,11 @@ section {
     border-radius: 0.5rem;
     outline-color: var(--main-color); 
     padding: 10px;
+}
+
+textarea {
+    resize: none;
+    width: 50%;
 }
 
 .text {
