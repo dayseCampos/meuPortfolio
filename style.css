@@ -163,16 +163,18 @@ section {
     line-height: 1.7;
 }
 
-.nsei {
+/*hobbies*/
+
+.caixa-h {
     text-align: center;
 }
 
-.nsei span {
+.caixa-h span {
     color: var(--main-color);
     font-weight: 600;
 }
 
-.nsei h2 {
+.caixa-h h2 {
     font-size: var(--h2-font);
 }
 
@@ -271,7 +273,7 @@ section {
     margin-bottom: 30px;
 }
 
-.tentando {
+.container-c {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -334,18 +336,18 @@ label {
     padding: 10px 0;
 }
 
-.what {
+.caixa-f {
     width: 25%;
 }
 
-.what h4 {
+.caixa-f h4 {
     font-size: 1.2rem;
     color: var(--text-color);
     margin-bottom: 25px;
     position: relative;
 }
 
-.what h4::before {
+.caixa-f h4::before {
     content: "";
     position: absolute;
     height: 2px;
@@ -355,11 +357,11 @@ label {
     background: var(--main-color);
 }
 
-.what ul li:not(last-child) {
+.caixa-f ul li:not(last-child) {
     margin-bottom: 15px;
 }
 
-.what ul li a {
+.caixa-f ul li a {
     color: var(--text-color);
     font-size: 1.1rem;
     display: block;
@@ -367,19 +369,19 @@ label {
     transition: .4s;
 }
 
-.what ul li a:hover {
+.caixa-f ul li a:hover {
     color: var(--text-color);
     transform: translateX(-12px);   
 }
 
-.what .social {
+.caixa-f .social {
     width: 220px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.what .social a {
+.caixa-f .social a {
     width: 40px;
     height: 40px;
     background: var(--main-color);
@@ -392,7 +394,7 @@ label {
     transition: .4s;
 }
 
-.what .social a:hover {
+.caixa-f .social a:hover {
     transform: scale(1.2);
     color: var(--bg-color);
     background: var(--text-color);
