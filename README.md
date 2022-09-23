@@ -2,7 +2,7 @@
 
 <h2> :high_brightness: Descrição da Página </h2>
 
-<p>Esse foi o meu primeiro projeto individual do curso Programadores Cariocas, você pode ver clicando <a href="https://daysecampos.github.io/meuPortfolio/">aqui</a>, acessando o link na descrição ou baixando! O objetivo era criar uma página para de apresentação, que em breve será mais trabalhada também como um portfólio. Ela tem as seguintes sessões, em uma página única:</p>
+<p>Esse foi o meu primeiro projeto individual do curso Programadores Cariocas, você pode ver clicando <a href="https://daysecampos.github.io/meuPortfolio/">aqui</a>, acessando o link na descrição ou baixando! O objetivo era criar uma página de apresentação, que em breve será mais trabalhada também como um portfólio. Ela tem as seguintes sessões, em uma página única:</p>
 
 <ul>
 <li>Home</li>
